@@ -26,9 +26,6 @@ rlat=ifactor*rlat
 ! do i=1,20
 
 i=35 ! Este é Rk. Ajustar para cada sistema.
-write(*,*) "provide the Rk mesh you wanted"
-READ(*,*) i
-
 rk= dble(i)
 !call rkmesh2D(rk,rlat,ngrid)
 call rkmesh(rk,rlat,ngrid)
